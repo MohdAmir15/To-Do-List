@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+//action to add the task and error hander
 function addTask(){
     if(inputBox.value === ''){
         alert("Input needed !");
@@ -16,6 +17,7 @@ function addTask(){
     inputBox.value = "";
     saveData();
 }
+//click function 
 listContainer.addEventListener("click", function(e){
     //toggle the check/uncheck status when clicked on the list
     if(e.target.tagName === "LI"){
